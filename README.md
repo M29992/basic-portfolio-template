@@ -7,7 +7,7 @@ please click here to view the portfolio site.
 
 
 ## Content 
-* [setup and Configuration] (#setup and Configuration)
+* [setup and Configuration] (#setup-and-configuration)
 ## setup and Configuration
 ## customization and editing 
 
