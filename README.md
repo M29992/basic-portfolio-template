@@ -5,8 +5,10 @@ please click here to view the portfolio site.
 
 ## features
 
-## Content 
 
+## Content 
+* [setup and Configuration] (#setup and Configuration)
+## setup and Configuration
 ## customization and editing 
 
 ## changelog
