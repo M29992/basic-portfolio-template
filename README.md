@@ -8,13 +8,19 @@ blah blah blah
 
 ## Content 
 * [setup and Configuration](#setup-and-configuration)
+* [Customization and Editing](#customization-and-editing)
+  * [Header Section](#header-section)
+*
+* [Changelog](#changelog)
+* [Licence](#licence)
 
 ## setup and Configuration
 blah blah blah
 
 
-## customization and editing 
+## Customization and Editing 
 blah blah blah
+### Header Section
 
 
 ## changelog
