@@ -7,7 +7,7 @@ please click here to view the portfolio site.
 blah blah blah
 
 ## Content 
-* [setup and Configuration] (#setup-and-configuration)
+* [setup and Configuration](#setup-and-configuration)
 
 ## setup and Configuration
 blah blah blah
