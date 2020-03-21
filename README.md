@@ -1,5 +1,5 @@
 # Matthew Evans Portfolio site
-This repo is used to contain my personal portfolio tool using basic CSS, HTML and Javascript due to the limitations placed by using github pages.
+This repository is used to contain my personal portfolio tool using basic CSS, HTML and Javascript due to the limitations placed by using github pages.
 
 please click [here](https://mattie.io/) to view the portfolio site.
 
@@ -44,12 +44,14 @@ blah blah blah
 
 
 ## 5. Changelog
-blah blah blah
+### 0.0.1 
+* Initial commits
+* updated ```readme```
 
 ## 6. Licence
 MIT License
 
-Copyright (c) [2020] [Matthew Evans]
+Copyright (c) 2020 Matthew Evans
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
