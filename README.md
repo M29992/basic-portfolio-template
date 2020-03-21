@@ -1,7 +1,7 @@
 # Matthew Evans Portfolio site
-This repository is used to contain my personal portfolio tool using basic CSS, HTML and Javascript due to the limitations placed by using github pages.
+This repository is used to contain my personal portfolio website. This portfolio site uses basic CSS, HTML and Javascript due to the limitations placed by using github pages. The site has been built to be modular allowing it easier to adjust content and styling.
 
-please click [here](https://mattie.io/) to view the portfolio site.
+Please click [here](https://mattie.io/) to view the portfolio site.
 
 
 ## 1. Contents 
@@ -31,19 +31,23 @@ please click [here](https://mattie.io/) to view the portfolio site.
 * Use of Variables for better theming changes 
 
 ## 3. Setup and Configuration
-blah blah blah
-
+  
 
 ## 4. Customization and Editing 
 ### 4.1 Header Section
-blah blah blah
+  
 ### 4.2 Portfolio Section
+  
 ### 4.3 Skills Section
+  
 ### 4.4 Work Section
+  
 ### 4.5 Education Section
+  
 ### 4.6 Footer Section
+  
 #### 4.6.1 Social Bar
-
+  
 
 ## 5. Changelog
 ### 0.0.1 
@@ -52,9 +56,6 @@ blah blah blah
 
 ## 6. Licence
 MIT License
-
-Copyright (c) 2020 Matthew Evans  
 See [```LICENSE.md```](LICENSE) for more information.
 
-
-
+Copyright (c) 2020 Matthew Evans  
