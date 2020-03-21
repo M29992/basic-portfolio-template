@@ -52,7 +52,7 @@ blah blah blah
 MIT License
 
 Copyright (c) 2020 Matthew Evans  
-See [```LICENSE.md```](LICENSE.md) for more information.
+See [```LICENSE.md```](LICENSE) for more information.
 
 
 
