@@ -3,17 +3,9 @@ This repo is used to contain my personal portfolio tool using basic CSS, HTML an
 
 please click [here](https://mattie.io/) to view the portfolio site.
 
-## 1. Features
-* variables for easy theme changes 
-* code comments 
-* commit early and commit often
-* meets AA guidance
-* meets HTML and CSS templates
-* fully responsive
-* quick load times
-* fully optimised images
 
-## 2. Contents 
+## 1. Contents 
+* [Features](#2-features)
 * [Setup and Configuration](#3-setup-and-configuration)
 * [Customization and Editing](#4-customization-and-editing)
   * [Header Section](#41-header-section)
@@ -25,6 +17,16 @@ please click [here](https://mattie.io/) to view the portfolio site.
   * [Social Bar](#461-social-bar)
 * [Changelog](#5-changelog)
 * [Licence](#6-licence)
+
+## 2. Features
+* variables for easy theme changes 
+* code comments 
+* commit early and commit often
+* meets AA guidance
+* meets HTML and CSS templates
+* fully responsive
+* quick load times
+* fully optimised images
 
 ## 3. Setup and Configuration
 blah blah blah
