@@ -14,17 +14,17 @@ please click [here](https://mattie.io/) to view the portfolio site.
 * fully optimised images
 
 ## 2. Contents 
-* [Setup and Configuration](#3.-setup-and-configuration)
-* [Customization and Editing](#4.-customization-and-editing)
-  * [Header Section](#4.1-header-section)
-  * [Portfolio Section](#4.2-Portfolio-Section)
-  * [Skills Section](#4.3-Skills-Section)
-  * [Work Section](#4.4-Work-Section)
-  * [Education Section](#4.5-Education-Section)
-  * [Footer Section](#4.6-Footer-Section)
-  * [Social Bar](#4.6.1-Social-Bar)
-* [Changelog](#5.-changelog)
-* [Licence](#6.-licence)
+* [Setup and Configuration](#3-setup-and-configuration)
+* [Customization and Editing](#4-customization-and-editing)
+  * [Header Section](#41-header-section)
+  * [Portfolio Section](#42-portfolio-section)
+  * [Skills Section](#43-skills-section)
+  * [Work Section](#44-work-section)
+  * [Education Section](#45-education-section)
+  * [Footer Section](#46-footer-section)
+  * [Social Bar](#461-social-bar)
+* [Changelog](#5-changelog)
+* [Licence](#6-licence)
 
 ## 3. Setup and Configuration
 blah blah blah
