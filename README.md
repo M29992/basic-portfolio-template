@@ -19,14 +19,16 @@ please click [here](https://mattie.io/) to view the portfolio site.
 * [Licence](#6-licence)
 
 ## 2. Features
-* variables for easy theme changes 
-* code comments 
-* commit early and commit often
-* meets AA guidance
-* meets HTML and CSS templates
-* fully responsive
-* quick load times
-* fully optimised images
+* Fully responsive
+* Code is in source control
+* Code is commented appropriately
+* HTML and CSS meet W3C validation standards
+* Conforms to WCAG 2.1 AA standards
+* Site is displayed within 2 seconds
+* Site is served using HTTPS only
+* Uses Google Analytics 
+* Image optimisation
+* Use of Variables for better theming changes 
 
 ## 3. Setup and Configuration
 blah blah blah
