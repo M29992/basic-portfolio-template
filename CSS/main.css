@@ -36,14 +36,14 @@ h1 {
 
 #nav li a {
     display: block;
-    color: white;
+    color: #74bec3;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 #nav li a:hover {
-    background-color: #e2e2e2;
+    background-color: var(--highlight-color);
 }
 
 #header {}
@@ -56,10 +56,41 @@ h1 {
 
 #education {}
 
-#footer {}
+#footer {
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
 
-#copyright {}
+#copyright {
+    float: left;
+}
 
-#social-Links {}
+#social-Links {
+    float: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-#to-top {}
+.fa {
+    font-size: 10vw;
+    text-decoration: none;
+}
+
+.fa-facebook:hover,
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-pushed:hover {
+    color: #73bec4;
+}
+
+#to-top {
+    float: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
