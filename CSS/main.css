@@ -68,29 +68,35 @@ h1 {
     float: left;
 }
 
-#social-Links {
-    float: center;
+#social-Links ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-left: 50%;
     overflow: hidden;
+}
+
+#social-Links li {
+    float: left;
+}
+
+#social-Links li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .fa {
     font-size: 10vw;
+    color: #e2e2e2;
     text-decoration: none;
 }
 
 .fa-facebook:hover,
 .fa-github:hover,
 .fa-linkedin:hover,
-.fa-pushed:hover {
+.fa-stack-overflow:hover,
+.fa-arrow-circle-o-up:hover {
     color: #73bec4;
-}
-
-#to-top {
-    float: right;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
