@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    margin: 0%;
+    color: #fff;
+    background-color: black;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+ nav li {
+    float: right;
+  }
+
+  nav li a img {
+    float: left;
+    width: 40px; 
+    height: auto; 
+    object-fit: contain;
+  }
+
+  nav li a img:hover {
+    background-color: #333;
+  }
+  
+ nav li a {
+    display: block;
+    color: #74bec3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  
+  nav li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+ nav .active {
+    background-color: #74bec3;
+    color: #fff;
+  }
