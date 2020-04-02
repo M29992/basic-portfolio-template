@@ -108,14 +108,20 @@ nav {
 @media(min-width: 600px) {
     .intro {
         display: grid;
+        width: min-content;
+        margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: "img title" "img subtitle";
         grid-template-columns: min-content max-content;
     }
+    .intro_image {
+        grid-area: img;
+        min-width: 250px;
+    }
 }
 
 
-/* Portfolio */
+/* Portfolio Section*/
 
 .portfolio {
     position: relative;
@@ -125,12 +131,12 @@ nav {
     .projects {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: repeat(auto-fill, 240px);
+        grid-template-columns: repeat(auto-fill, 200px);
     }
 }
 
 
-/* Skills */
+/* Skills Section*/
 
 .skills {
     position: relative;
@@ -145,23 +151,13 @@ nav {
 }
 
 
-/* Experience */
+/* Experience Section*/
 
 
-/* Education & Certification*/
+/* Education & Certification Section*/
 
 
 /*body,
-html {
-    height: 100%;
-    margin: 0%;
-    color: var(--main-txt-color);
-    background-color: var(--main-bg-color);
-}
-
-h1 {
-    color: var(--heading-txt-color);
-}
 
 #nav ul {
     position: fixed;
@@ -189,16 +185,6 @@ h1 {
 #nav li a:hover {
     background-color: var(--highlight-color);
 }
-
-#header {}
-
-#portfoli {}
-
-#skills {}
-
-#experience {}
-
-#education {}
 
 #footer {
     bottom: 0;
