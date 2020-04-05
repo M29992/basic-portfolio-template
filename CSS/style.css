@@ -13,7 +13,7 @@
     --font-weight-regular: 300;
     --font-weight-bold: 900;
     --font-primary-color: #e2e2e2;
-    --font-secondary-color: ;
+    --font-secondary-color: #b38cb4;
     --font-accent-color: #9cdcfe;
     --body-line-height: 1.6;
     --heading-line-height: 1;
@@ -28,6 +28,7 @@
     --main-txt-color: #e2e2e2;
     --heading-txt-color: #9cdcfe;
     --extra-color: #b38cb4; */
+    --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
 @media (min-width: 800px) {
@@ -61,6 +62,26 @@ img {
 }
 
 
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--secondary-color);
+    color: var(--font-secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: var(--font-weight-bold);
+    transition: transform 200ms ease-in-out;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
 /* Typography */
 
 h1,
@@ -72,10 +93,12 @@ h3 {
 
 h1 {
     font-size: var(--font-size-h1);
+    color: var(--font-accent-color);
 }
 
 h2 {
     font-size: var(--font-size-h2);
+    color: var(--font-accent-color);
 }
 
 h3 {
@@ -89,6 +112,7 @@ h3 {
 .section_subtitle {
     margin: 0;
     font-size: var(--font-size-h3);
+    word-wrap: break-word;
 }
 
 
@@ -111,12 +135,15 @@ nav {
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        grid-template-areas: "img title" "img subtitle";
-        grid-template-columns: min-content max-content;
+        /*   grid-template-areas: "img title" "img subtitle";
+        grid-template-columns: min-content max-content; */
     }
     .intro_image {
-        grid-area: img;
+        /*  grid-area: img; */
         min-width: 250px;
+        position: relative;
+        z-index: 2;
+        box-shadow: var(--box-shadow);
     }
 }
 
@@ -124,6 +151,10 @@ nav {
 /* Portfolio Section*/
 
 .portfolio {
+    background-color: var(--primary-color);
+    background-image: url(https://2l3jyssxy6-flywheel.netdna-ssl.com/wp-content/uploads/can-drinking-water-help-my-depression-and-anxiety-495x400.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
     position: relative;
 }
 
@@ -139,7 +170,16 @@ nav {
 /* Skills Section*/
 
 .skills {
+    background-color: var(--primary-color);
+    background-image: url(https://2l3jyssxy6-flywheel.netdna-ssl.com/wp-content/uploads/can-drinking-water-help-my-depression-and-anxiety-495x400.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
     position: relative;
+    text-align: center;
+}
+
+.skills img {
+    max-width: 60px;
 }
 
 @media(min-width: 600px) {
