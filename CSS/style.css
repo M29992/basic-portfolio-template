@@ -61,6 +61,10 @@ img {
     max-width: 100%;
 }
 
+.section_title {
+    padding-bottom: 0.25em;
+}
+
 
 /* Button */
 
@@ -158,11 +162,17 @@ nav {
     position: relative;
 }
 
+.aProject {
+    padding-bottom: 1em;
+}
+
 @media(min-width: 600px) {
     .projects {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: repeat(auto-fill, 200px);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -175,18 +185,17 @@ nav {
     background-size: cover;
     background-blend-mode: multiply;
     position: relative;
-    text-align: center;
 }
 
-.skills img {
-    max-width: 60px;
+.skills_list {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
 }
 
 @media(min-width: 600px) {
     .skills_list {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: repeat(auto-fill, 300px);
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     }
 }
 
@@ -195,6 +204,42 @@ nav {
 
 
 /* Education & Certification Section*/
+
+
+/* footer*/
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--font-primary-color);
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.footer a {
+    color: var(--font-secondary-color);
+    font-size: var(--font-size-h2);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--secondary-color);
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.social-list_item {
+    margin: 0 .5em;
+    padding: 0.2em;
+}
+
+.copyright {
+    padding-left: 2em;
+}
 
 
 /*body,
@@ -226,48 +271,10 @@ nav {
     background-color: var(--highlight-color);
 }
 
-#footer {
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-}
-
-#copyright {
-    float: left;
-}
-
-#social-Links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 50%;
-    overflow: hidden;
-}
-
-#social-Links li {
-    float: left;
-}
-
-#social-Links li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
 .fa {
     font-size: 10vw;
     color: #e2e2e2;
     text-decoration: none;
 }
 
-.fa-facebook:hover,
-.fa-github:hover,
-.fa-linkedin:hover,
-.fa-stack-overflow:hover,
-.fa-arrow-circle-o-up:hover {
-    color: #73bec4;
-}
 */
