@@ -1,248 +1,313 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-
-/* Variables for custom properties */
-
-:root {
-    --font-primary: 'Candara';
-    --font-secondary: 'roboto';
-    --font-weight-regular: 300;
-    --font-weight-bold: 900;
-    --font-primary-color: #e2e2e2;
-    --font-secondary-color: #b38cb4;
-    --font-accent-color: #9cdcfe;
-    --body-line-height: 1.6;
-    --heading-line-height: 1;
-    --font-size-h1: 3rem;
-    --font-size-h2: 2.25rem;
-    --font-size-h3: 1.25rem;
-    --font-size-body: 1rem;
-    --primary-color: #1e1e1e;
-    --secondary-color: #a9bcd0;
-    /*
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    /* Variables for custom properties */
+    
+     :root {
+        --font-primary: 'Candara';
+        --font-secondary: 'roboto';
+        --font-weight-regular: 300;
+        --font-weight-bold: 900;
+        --font-primary-color: #e2e2e2;
+        --font-secondary-color: #b38cb4;
+        --font-accent-color: #9cdcfe;
+        --body-line-height: 1.6;
+        --heading-line-height: 1;
+        --font-size-h1: 3rem;
+        --font-size-h2: 2.25rem;
+        --font-size-h3: 1.25rem;
+        --font-size-body: 1rem;
+        --primary-color: #1e1e1e;
+        --secondary-color: #a9bcd0;
+        /*
     --highlight-color: #424c55;
     --main-txt-color: #e2e2e2;
     --heading-txt-color: #9cdcfe;
     --extra-color: #b38cb4; */
-    --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
-}
-
-@media (min-width: 800px) {
-     :root {
-        --font-size-h1: 4.5rem;
-        --font-size-h2: 3.75rem;
-        --font-size-h3: 1.5rem;
-        --font-size-body: 1.125rem;
+        --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
     }
-}
-
-
-/* General Styles */
-
-body {
-    background: var(--primary-color);
-    color: var(--font-primary-color);
-    margin: 0;
-    font-family: var(--font-primary);
-    font-size: var(--font-size-body);
-    line-height: var(--body-line-height);
-}
-
-section {
-    padding: 2em 0.5em;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-.section_title {
-    padding-bottom: 0.25em;
-}
-
-
-/* Button */
-
-.btn {
-    display: inline-block;
-    padding: .5em 1.5em;
-    background: var(--secondary-color);
-    color: var(--font-secondary-color);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    font-weight: var(--font-weight-bold);
-    transition: transform 200ms ease-in-out;
-    border-radius: 4px;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
-
-/* Typography */
-
-h1,
-h2,
-h3 {
-    line-height: var(--heading-line-height);
-    margin: 0;
-}
-
-h1 {
-    font-size: var(--font-size-h1);
-    color: var(--font-accent-color);
-}
-
-h2 {
-    font-size: var(--font-size-h2);
-    color: var(--font-accent-color);
-}
-
-h3 {
-    font-size: var(--font-size-h3);
-}
-
-.section_title {
-    margin: 0;
-}
-
-.section_subtitle {
-    margin: 0;
-    font-size: var(--font-size-h3);
-    word-wrap: break-word;
-}
-
-
-/* header */
-
-nav {
-    display: none;
-}
-
-
-/* Intro Section */
-
-.intro {
-    position: relative;
-}
-
-@media(min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        /*   grid-template-areas: "img title" "img subtitle";
-        grid-template-columns: min-content max-content; */
+    
+    @media (min-width: 800px) {
+         :root {
+            --font-size-h1: 4.5rem;
+            --font-size-h2: 3.75rem;
+            --font-size-h3: 1.5rem;
+            --font-size-body: 1.125rem;
+        }
     }
-    .intro_image {
-        /*  grid-area: img; */
-        min-width: 250px;
+    /* General Styles */
+    
+    body {
+        background: var(--primary-color);
+        color: var(--font-primary-color);
+        margin: 0;
+        font-family: var(--font-primary);
+        font-size: var(--font-size-body);
+        line-height: var(--body-line-height);
+    }
+    
+    section {
+        padding: 2em 0.5em;
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    .section_title {
+        padding-bottom: 0.25em;
+    }
+    /* Button */
+    
+    .btn {
+        display: inline-block;
+        padding: .5em 1.5em;
+        background: var(--secondary-color);
+        color: var(--font-secondary-color);
+        text-decoration: none;
+        cursor: pointer;
+        font-size: .8rem;
+        font-weight: var(--font-weight-bold);
+        transition: transform 200ms ease-in-out;
+        border-radius: 4px;
+    }
+    
+    .btn:hover {
+        transform: scale(1.1);
+    }
+    /* Typography */
+    
+    h1,
+    h2,
+    h3 {
+        line-height: var(--heading-line-height);
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: var(--font-size-h1);
+        color: var(--font-accent-color);
+    }
+    
+    h2 {
+        font-size: var(--font-size-h2);
+        color: var(--font-accent-color);
+    }
+    
+    h3 {
+        font-size: var(--font-size-h3);
+    }
+    
+    .section_title {
+        margin: 0;
+    }
+    
+    .section_subtitle {
+        margin: 0;
+        font-size: var(--font-size-h3);
+        word-wrap: break-word;
+    }
+    /* header */
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25em;
+    }
+    
+    .logo {
+        max-width: 50px;
+    }
+    
+    @media(min-width: 600px) {
+        .logo {
+            max-width: 70px;
+        }
+    }
+    
+    .nav {
+        position: fixed;
+        /*might wanna change this */
+        background: var(--primary-color);
+        color: var(--font-primary-color);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    }
+    
+    .nav_list {
+        list-style: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav_item a {
+        color: var(--font-primary-color);
+        font-size: var(--font-size-h3);
+        font-weight: var(--font-weight-bold);
+        text-decoration: none;
+    }
+    
+    .nav_item a:hover {
+        color: var(--font-accent-color);
+    }
+    
+    .nav-toggle {
+        padding: 0.5em;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 0.5em;
+    }
+    
+    .hamburger {
+        display: block;
         position: relative;
-        z-index: 2;
-        box-shadow: var(--box-shadow);
     }
-}
-
-
-/* Portfolio Section*/
-
-.portfolio {
-    background-color: var(--primary-color);
-    background-image: url(https://2l3jyssxy6-flywheel.netdna-ssl.com/wp-content/uploads/can-drinking-water-help-my-depression-and-anxiety-495x400.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    position: relative;
-}
-
-.aProject {
-    padding-bottom: 1em;
-}
-
-@media(min-width: 600px) {
-    .projects {
+    
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        background: var(--secondary-color);
+        width: 2em;
+        height: 3px;
+        border-radius: 1em;
+        transition: transform 250ms ease-in-out;
+    }
+    
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    
+    .hamburger::before {
+        top: 6px;
+    }
+    
+    .hamburger::after {
+        bottom: 6px;
+    }
+    /* Intro Section */
+    
+    .intro {
+        position: relative;
+    }
+    
+    @media(min-width: 600px) {
+        .intro {
+            display: grid;
+            width: min-content;
+            margin: 0 auto;
+            grid-column-gap: 1em;
+            /*   grid-template-areas: "img title" "img subtitle";
+        grid-template-columns: min-content max-content; */
+        }
+        .intro_image {
+            /*  grid-area: img; */
+            min-width: 250px;
+            position: relative;
+            z-index: 2;
+            box-shadow: var(--box-shadow);
+        }
+    }
+    /* Portfolio Section*/
+    
+    .portfolio {
+        background-color: var(--primary-color);
+        background-image: url(https://2l3jyssxy6-flywheel.netdna-ssl.com/wp-content/uploads/can-drinking-water-help-my-depression-and-anxiety-495x400.jpg);
+        background-size: cover;
+        background-blend-mode: multiply;
+        position: relative;
+    }
+    
+    .aProject {
+        padding-bottom: 1em;
+    }
+    
+    @media(min-width: 600px) {
+        .projects {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: repeat(auto-fill, 200px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    /* Skills Section*/
+    
+    .skills {
+        background-color: var(--primary-color);
+        background-image: url(https://2l3jyssxy6-flywheel.netdna-ssl.com/wp-content/uploads/can-drinking-water-help-my-depression-and-anxiety-495x400.jpg);
+        background-size: cover;
+        background-blend-mode: multiply;
+        position: relative;
+    }
+    
+    .skills_list {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: repeat(auto-fill, 200px);
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     }
-}
-
-
-/* Skills Section*/
-
-.skills {
-    background-color: var(--primary-color);
-    background-image: url(https://2l3jyssxy6-flywheel.netdna-ssl.com/wp-content/uploads/can-drinking-water-help-my-depression-and-anxiety-495x400.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    position: relative;
-}
-
-.skills_list {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
-}
-
-@media(min-width: 600px) {
-    .skills_list {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    
+    @media(min-width: 600px) {
+        .skills_list {
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        }
     }
-}
-
-
-/* Experience Section*/
-
-
-/* Education & Certification Section*/
-
-
-/* footer*/
-
-.footer {
-    background-color: var(--primary-color);
-    color: var(--font-primary-color);
-    text-align: center;
-    padding: 2.5em 0;
-}
-
-.footer a {
-    color: var(--font-secondary-color);
-    font-size: var(--font-size-h2);
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: var(--secondary-color);
-}
-
-.social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0;
-}
-
-.social-list_item {
-    margin: 0 .5em;
-    padding: 0.2em;
-}
-
-.copyright {
-    padding-left: 2em;
-}
-
-
-/*body,
+    /* Experience Section*/
+    /* Education & Certification Section*/
+    /* footer*/
+    
+    .footer {
+        background-color: var(--primary-color);
+        color: var(--font-primary-color);
+        text-align: center;
+        padding: 2.5em 0;
+    }
+    
+    .footer a {
+        color: var(--font-secondary-color);
+        font-size: var(--font-size-h2);
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .social-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 2em 0;
+    }
+    
+    .social-list_item {
+        margin: 0 .5em;
+        padding: 0.2em;
+    }
+    
+    .copyright {
+        padding-left: 2em;
+        margin-bottom: 0em;
+    }
+    /*body,
 
 #nav ul {
     position: fixed;
