@@ -39,6 +39,10 @@
     }
     /* General Styles */
     
+    html {
+        scroll-behavior: smooth;
+    }
+    
     body {
         background: var(--primary-color);
         color: var(--font-primary-color);
@@ -172,6 +176,27 @@
         position: absolute;
         right: 0.5em;
         top: 0.5em;
+        z-index: 999;
+    }
+    
+    .nav-open .nav {
+        transform: translateX(0);
+    }
+    
+    .nav-open .nav-toggle {
+        position: fixed;
+    }
+    
+    .nav-open .hamburger {
+        transform: rotate(.625turn);
+    }
+    
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translateX(-6px);
+    }
+    
+    .nav-open .hamburger::after {
+        opacity: 0;
     }
     
     .hamburger {
