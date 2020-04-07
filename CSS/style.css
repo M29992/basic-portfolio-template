@@ -6,26 +6,21 @@
     /* Variables for custom properties */
     
      :root {
-        --font-primary: 'Candara';
+        --font-primary: 'Raleway', sans-serif;
         --font-secondary: 'roboto';
         --font-weight-regular: 300;
         --font-weight-bold: 900;
-        --font-primary-color: #e2e2e2;
-        --font-secondary-color: #b38cb4;
-        --font-accent-color: #9cdcfe;
+        --font-primary-color: #Ffffff;
+        --font-secondary-color: #D2D5DD;
+        --accent-color: #9cdcfe;
         --body-line-height: 1.6;
         --heading-line-height: 1;
         --font-size-h1: 3rem;
         --font-size-h2: 2.25rem;
         --font-size-h3: 1.25rem;
         --font-size-body: 1rem;
-        --primary-color: #1e1e1e;
-        --secondary-color: #a9bcd0;
-        /*
-    --highlight-color: #424c55;
-    --main-txt-color: #e2e2e2;
-    --heading-txt-color: #9cdcfe;
-    --extra-color: #b38cb4; */
+        --primary-color: #121212;
+        --secondary-color: #393E41;
         --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
     }
     
@@ -81,6 +76,8 @@
     
     .btn:hover {
         transform: scale(1.1);
+        background: var(--accent-color);
+        color: var(--font-primary-color);
     }
     /* Typography */
     
@@ -93,12 +90,12 @@
     
     h1 {
         font-size: var(--font-size-h1);
-        color: var(--font-accent-color);
+        color: var(--accent-color);
     }
     
     h2 {
         font-size: var(--font-size-h2);
-        color: var(--font-accent-color);
+        color: var(--accent-color);
     }
     
     h3 {
@@ -134,7 +131,6 @@
     
     .nav {
         position: fixed;
-        /*might wanna change this */
         background: var(--primary-color);
         color: var(--font-primary-color);
         top: 0;
@@ -165,7 +161,7 @@
     }
     
     .nav_item a:hover {
-        color: var(--font-accent-color);
+        color: var(--accent-color);
     }
     
     .nav-toggle {
@@ -173,7 +169,7 @@
         background: transparent;
         border: 0;
         cursor: pointer;
-        position: absolute;
+        position: fixed;
         right: 0.5em;
         top: 0.5em;
         z-index: 999;
@@ -207,7 +203,7 @@
     .hamburger,
     .hamburger::before,
     .hamburger::after {
-        background: var(--secondary-color);
+        background: var(--accent-color);
         width: 2em;
         height: 3px;
         border-radius: 1em;
@@ -314,7 +310,7 @@
     }
     
     .footer a:hover {
-        color: var(--secondary-color);
+        color: var(--accent-color);
     }
     
     .social-list {
@@ -333,39 +329,3 @@
         padding-left: 2em;
         margin-bottom: 0em;
     }
-    /*body,
-
-#nav ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-#nav li {
-    float: right;
-}
-
-#nav li a {
-    display: block;
-    color: #74bec3;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#nav li a:hover {
-    background-color: var(--highlight-color);
-}
-
-.fa {
-    font-size: 10vw;
-    color: #e2e2e2;
-    text-decoration: none;
-}
-
-*/
