@@ -328,11 +328,15 @@
         padding-bottom: 0.5em;
     }
     
+    .portfolio h3 {
+        padding-bottom: 3px;
+    }
+    
     .aProject {
         padding-bottom: 1em;
     }
     
-    @media(min-width: 600px) {
+    @media(min-width: 670px) {
         .projects {
             display: grid;
             grid-gap: 1em;
@@ -356,6 +360,44 @@
     .education .section_title {
         text-align: right;
         padding-bottom: 0.5em;
+    }
+    
+    .school {
+        padding-top: 2em;
+    }
+    
+    @media(min-width: 600px) {
+        .location {
+            text-align: right;
+        }
+        .date {
+            text-align: center;
+        }
+        .level {
+            text-align: left;
+        }
+        .school {
+            max-width: 1600px;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        .location {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+        .date {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        .level {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .specs {
+            grid-area: 2 / 1 / 3 / 4;
+        }
     }
     /* footer*/
     
