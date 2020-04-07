@@ -64,7 +64,8 @@
     .btn {
         display: inline-block;
         padding: .5em 1.5em;
-        background: var(--secondary-color);
+        background: none;
+        border: 1px solid var(--font-primary-color);
         color: var(--font-secondary-color);
         text-decoration: none;
         cursor: pointer;
@@ -76,8 +77,8 @@
     
     .btn:hover {
         transform: scale(1.1);
-        background: var(--accent-color);
-        color: var(--font-primary-color);
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
     }
     /* Typography */
     
@@ -110,6 +111,16 @@
         margin: 0;
         font-size: var(--font-size-h3);
         word-wrap: break-word;
+    }
+    /*cover background */
+    
+    .background {
+        background-color: var(--primary-color);
+        background-image: url(../Images/Backgorunds/20191007_212257.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-blend-mode: overlay;
     }
     /* header */
     
@@ -157,7 +168,9 @@
         color: var(--font-primary-color);
         font-size: var(--font-size-h3);
         font-weight: var(--font-weight-bold);
+        text-transform: uppercase;
         text-decoration: none;
+        letter-spacing: 0.15em;
     }
     
     .nav_item a:hover {
@@ -227,8 +240,22 @@
     }
     /* Intro Section */
     
-    .intro {
+    .intro .section_title {
         position: relative;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    
+    .intro_image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .intro .section_subtitle {
+        text-align: center;
+        padding-top: 1.5em;
     }
     
     @media(min-width: 600px) {
@@ -246,6 +273,24 @@
             position: relative;
             z-index: 2;
             box-shadow: var(--box-shadow);
+        }
+    }
+    /* Skills Section*/
+    
+    .skills {
+        background-color: var(--primary-color);
+        position: relative;
+    }
+    
+    .skills_list {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    }
+    
+    @media(min-width: 600px) {
+        .skills_list {
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
         }
     }
     /* Portfolio Section*/
@@ -269,27 +314,6 @@
             grid-template-columns: repeat(auto-fill, 200px);
             margin-left: auto;
             margin-right: auto;
-        }
-    }
-    /* Skills Section*/
-    
-    .skills {
-        background-color: var(--primary-color);
-        background-image: url(https://2l3jyssxy6-flywheel.netdna-ssl.com/wp-content/uploads/can-drinking-water-help-my-depression-and-anxiety-495x400.jpg);
-        background-size: cover;
-        background-blend-mode: multiply;
-        position: relative;
-    }
-    
-    .skills_list {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
-    }
-    
-    @media(min-width: 600px) {
-        .skills_list {
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
         }
     }
     /* Experience Section*/
