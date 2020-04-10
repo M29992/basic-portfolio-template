@@ -252,6 +252,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        border-radius: 0px 40px 0px 40px;
     }
     
     .intro .section_subtitle {
@@ -304,6 +305,7 @@
     
     .aSkill img {
         height: 80px;
+        padding: 5px;
     }
     
     @media(min-width: 600px) {
