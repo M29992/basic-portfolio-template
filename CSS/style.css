@@ -124,10 +124,20 @@
     
     .background {
         background-color: var(--primary-color);
-        background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgorunds/background.jpg);
+        background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825));
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
+    }
+    
+    @media(min-width:600px) {
+        .background {
+            background-color: var(--primary-color);
+            background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgorunds/background.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
     }
     /* header */
     
@@ -272,8 +282,6 @@
             width: min-content;
             margin: 0 auto;
             grid-column-gap: 1em;
-            /*   grid-template-areas: "img title" "img subtitle";
-        grid-template-columns: min-content max-content; */
         }
         .intro_image {
             /*  grid-area: img; */
