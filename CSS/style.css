@@ -361,6 +361,10 @@
         text-align: left;
         padding-bottom: 0.5em;
     }
+    
+    .job {
+        padding-top: 2em;
+    }
     /* Education & Certification Section*/
     
     .education {
