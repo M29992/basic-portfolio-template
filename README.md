@@ -146,8 +146,14 @@ There are additional scripts within the HTML document to gather the current year
 The header section can be broken down to the following subsections: background, navigation and introduction.
 #### 4.1.1 Background
 The background section contains the headers initial background. 
-The mobile view displays a CSS gradient from the primary colour to the skills section colour.
-The desktop view displays a background image under the CSS gradient that covers the full header section.
+Mobile view displays a CSS gradient from the primary colour to the skills section colour.
+```CSS
+background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825));
+```
+Desktop view displays a background image under the CSS gradient that covers the full header section.
+```CSS
+background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgorunds/background.jpg);
+```
 #### 4.1.2 Introduction
 The Intro section consists of a title, an image and a subtitle.
 the section title is centered and keeps a 1em padding at the bottom to give the title a level of importance and seperate the title from the image
@@ -156,15 +162,29 @@ the image when viewed on a desktop screen is displayed with a shadow and a maxim
 #### 4.1.3 Navigation 
   
 ### 4.2 Skills Section
-The skills section uses a skill list and askill to show of users skills.
-the skills list uses a CSS flexbox to dynamicaly add new askills to the right untill it hits the edge of the browser creating a new line for the next item, aligning items to the centre so that items generate from the center out. 
+The skills section uses a skill listcalled ```skills_list ``` and ```aSkill``` to show of users skills.
+```skills_list ``` uses a CSS flexbox to dynamicaly add new ```aSkills``` to the right untill it hits the edge of the browser creating a new line for the next item. CSS styling to aligning items to the centre has been added to generate from the center out. 
 
-askill is used as a data item within the skill list to represent a skill each askill contains an image to represent the skill, a data hint to help with keyword search and scanning tools and an alt for accessibility.
-
-askill have margins on the left and right of 20px for mobile and 40px for desktop, each skill has an image attached to it to display an easy to distingush tool with a 5px padding around the images and a max width of 120px on mobile and 175px on desktop.
+```aSkill``` is used as a data item within ```skills_list ``` to represent a skill each ```aSkill``` object contains an image to represent the skill, a data hint to help with keyword search and scanning tools and an alt for accessibility.
+```HTML
+<div data-hint="Java" class="aSkill">
+   <img src="Images/Skills/java.svg" alt="Java">
+</div>
+<!--close skill-->
+```
 
 ### 4.3 Portfolio Section
-the portfolio section displays a list of projects being worked on with a button to redirect to the project or code. projects are displayed as siple content held within a aproject div tag for desktop viewers aProjects are displayed as a grid given 400px per column in the grid. 
+Portfolio section displays a list of projects being worked on with a button to redirect to the project or code. 
+projects are displayed as simple content held within a ```aProject``` div tag for desktop viewers ```aProjects``` are displayed as a grid given 400px per column in the grid. 
+```HTML
+<div class="aProject">
+<h3>Mattie.io portfolio site</h3>
+   <img src="Images/Projects/mattieio.png" alt="Mattie.io site views">
+   <p>Portfolio site created for Mattie.io using HMTML, CSS and JavaScript. </p>
+   <a href="https://github.com/M29992/M29992.github.io" class="btn">View project</a>
+</div>
+ <!--close a Project-->
+```
    
 ### 4.4 Experience Section
   
@@ -178,8 +198,8 @@ Both the desktop view and mobile view use the same footer CSS. The copywrite is 
 The horizontal line is used to break up the social media links from the copywrite information but can be better executed and will be adjusted in future builds to represent this.
 
 #### 4.6.1 Social Bar
-The social bar works similarly to all basic navigation CSS designs, each social media link is held in a div called social-list_item that is contained within the div social list.
-All links within the footer first remove the styling, aligns the list to the centre and places the list in a CSS flexbox. Each social media link contains a link an aria-label for accessibility and a class that is fab fa-*** where fab fa uses font awsome CSS (https://fontawesome.com/) to produce social media icons rather then using images or text.
+The social bar works similarly to all basic navigation CSS designs, each social media link is held in a div called ```social-list_item``` that is contained within the div social list.
+All links within the footer first remove the styling, aligns the list to the centre and places the list in a CSS flexbox. Each social media link contains a link an aria-label for accessibility and a class that is ```fab fa-***``` where fab fa uses font awsome CSS (https://fontawesome.com/) to produce social media icons rather then using images or text.
   
 
 ## 5. Changelog
