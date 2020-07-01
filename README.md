@@ -198,6 +198,110 @@ The image when viewed on a desktop is displayed with a shadow and a maximum of 2
 ```
 
 #### 4.1.3. Navigation 
+The site makes use of a hamburger style navigation menu for the entire site.
+The HTML is used to create hyperlinks for the menu system.
+```HTML
+<nav class="nav">
+    <ul class="nav_list">
+         <li class="nav_item"><a href="#skills">Skills</a></li>
+         <li class="nav_item"><a href="#portfolio">Portfolio</a></li>
+         <li class="nav_item"><a href="#experience">Experience</a></li>
+         <li class="nav_item"><a href="#education">Education</a></li>
+    </ul>
+</nav>
+```
+The Javascript is used to hide and show the menu system from the users.
+```JavaScript
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav_item')
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
+```
+The CSS is used to style how the hamburger and menu appears to the user.
+```CSS
+  /*navigation menu */
+    
+    .nav {
+        position: fixed;
+        background: var(--primary-color);
+        color: var(--font-primary-color);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    }
+    
+    .nav_list {
+        list-style: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav_item a {
+        color: var(--font-primary-color);
+        font-size: var(--font-size-h3);
+        font-weight: var(--font-weight-bold);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+    }
+    
+    .nav_item a:hover {
+        color: var(--accent-color);
+    }
+    
+    .nav-toggle {
+        padding: 0.5em;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        position: fixed;
+        right: 0.5em;
+        top: 0.5em;
+        z-index: 999;
+    }
+    
+    .nav-open .nav {
+        transform: translateX(0);
+    }
+    
+    .nav-open .nav-toggle {
+        position: fixed;
+    }
+    
+    .nav-open .hamburger {
+        transform: rotate(.625turn);
+    }
+    
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translateX(-6px);
+    }
+    
+    .nav-open .hamburger::after {
+        opacity: 0;
+    }
+    
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+```
   
 ### 4.2. Skills Section
 The skills section uses a skill listcalled ```skills_list ``` and ```aSkill``` to show of users skills.
