@@ -12,9 +12,9 @@ Please click [here](https://mattie.io/) to view the portfolio site.
   * [JavaScript](#33-javascript)
 * [Customization and Editing](#4-customization-and-editing)
   * [Header Section](#41-header-section)
-     * [Background](411-background)
-     * [Introduction](412-introduction)
-     * [Navigation](413-navigation)
+     * [Background](#411-background)
+     * [Introduction](#412-introduction)
+     * [Navigation](#413-navigation)
   * [Skills Section](#42-skills-section)
   * [Portfolio Section](#43-portfolio-section)
   * [Experience Section](#44-experience-section)
@@ -303,7 +303,7 @@ Both the desktop view and mobile view use the same footer CSS. The copywrite is 
 
 The horizontal line is used to break up the social media links from the copywrite information but can be better executed and will be adjusted in future builds to represent this.
 
-#### 4.6.1 Social Bar
+#### 4.6.1. Social Bar
 The social bar works similarly to all basic navigation CSS designs, each social media link is held in a div called ```social-list_item``` that is contained within the div social list.
 All links within the footer first remove the styling, aligns the list to the centre and places the list in a CSS flexbox. Each social media link contains a link an aria-label for accessibility and a class that is ```fab fa-***``` where fab fa uses font awsome CSS (https://fontawesome.com/) to produce social media icons rather then using images or text.
 
