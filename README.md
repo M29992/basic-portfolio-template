@@ -155,10 +155,42 @@ Desktop view displays a background image under the CSS gradient that covers the 
 background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgorunds/background.jpg);
 ```
 #### 4.1.2 Introduction
-The Intro section consists of a title, an image and a subtitle.
-the section title is centered and keeps a 1em padding at the bottom to give the title a level of importance and seperate the title from the image
-the subtitle is also centered and keeps a 1.5em padding at the top to give the image some space
-the image when viewed on a desktop screen is displayed with a shadow and a maximum of 280px in size when viewed on a mobile device the image will take up 50% of the inline view. the image is always central and the border radius curves 2 alternative corners.
+The Introduction section consists of a title, an image and a subtitle.
+The section title is centered and keeps a 1em padding at the bottom to give the title a level of importance and seperate the title from the image.
+```CSS
+.intro .section_title {
+   position: relative;
+   text-align: center;
+   padding-bottom: 1em;
+    }
+```
+The subtitle is centered and keeps a 1.5em padding at the top to give the image some space.
+```CSS
+.intro .section_subtitle {
+   text-align: center;
+   padding-top: 1.5em;
+    }
+```
+The image when viewed on a desktop is displayed with a shadow and a maximum of 280 pixels in size, when viewed on a mobile device the image will take up 50% of the inline view.
+```CSS
+.intro_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 0px 40px 0px 40px;
+}
+    
+@media(min-width: 600px) {
+   .intro_image {
+      max-width: 280px;
+      position: relative;
+      z-index: 2;
+      box-shadow: var(--box-shadow);
+   }
+} 
+```
+
 #### 4.1.3 Navigation 
   
 ### 4.2 Skills Section
@@ -187,19 +219,109 @@ projects are displayed as simple content held within a ```aProject``` div tag fo
 ```
    
 ### 4.4 Experience Section
-  
+Every job is held in a ```job``` object that contains the title, date, location and specs, these ```job``` objects are then contained within a ```experince_list```.
+```CSS
+.job {
+        padding-top: 2em;
+    }
+    
+    @media(min-width: 600px) {
+        .job {
+            max-width: 1600px;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        .overview {
+            grid-column: 1/4;
+            grid-row: 2;
+        }
+        .specs {
+            grid-column: 1/4;
+            grid-row: 3;
+        }
+    }
+```
+Each job has a padding of 2em from the previous job or section title. When viewing from a Desktop or display greater then 600 pixels the jobs are displayed using CSS grids to make use of the full width available. 
+
 ### 4.5 Education Section
+Education works similarly to the education section, every certification or achievement is held in the ```education_list``` under a ```school``` object. 
+
+A school object contains a level, date, location and specs.
+```CSS
+.school {
+        padding-top: 2em;
+    }
+ @media(min-width: 600px) {
+        .location {
+            text-align: right;
+        }
+        .date {
+            text-align: center;
+        }
+        .level {
+            text-align: left;
+        }
+        .school {
+            max-width: 1600px;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        .specs {
+            grid-column: 1/4;
+            grid-row: 3;
+        }
+    }
+```
   
 ### 4.6 Footer Section
 The footer contains the social bar, the copywrite and a horizontal line.
 
 Both the desktop view and mobile view use the same footer CSS. The copywrite is basic text that uses a simple javascript function to get the current year and display this on the site.
+```Javascript
+<script>
+   document.write(new Date().getFullYear());
+</script>
+```
 
 The horizontal line is used to break up the social media links from the copywrite information but can be better executed and will be adjusted in future builds to represent this.
 
 #### 4.6.1 Social Bar
 The social bar works similarly to all basic navigation CSS designs, each social media link is held in a div called ```social-list_item``` that is contained within the div social list.
 All links within the footer first remove the styling, aligns the list to the centre and places the list in a CSS flexbox. Each social media link contains a link an aria-label for accessibility and a class that is ```fab fa-***``` where fab fa uses font awsome CSS (https://fontawesome.com/) to produce social media icons rather then using images or text.
+
+```CSS
+ .footer a {
+        color: var(--font-secondary-color);
+        font-size: var(--font-social-size);
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        color: var(--accent-color);
+    }
+    
+    .social-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .social-list_item {
+        margin: 0 .25em;
+        padding: 0.2em;
+    }
+```
   
 
 ## 5. Changelog
