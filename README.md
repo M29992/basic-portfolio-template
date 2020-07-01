@@ -1,5 +1,5 @@
 # Matthew Evans Portfolio site
-This repository is used to contain my personal portfolio website. This portfolio site uses basic CSS, HTML and Javascript due to the limitations placed by using github pages. The site has been built to be modular allowing it easier to adjust content and styling.
+This repository is used to contain my personal portfolio website. This portfolio site uses basic CSS, HTML and JavaScript due to the limitations placed by using GitHub pages. The site has been built to be modular allowing it easier to adjust content and styling.
 
 Please click [here](https://mattie.io/) to view the portfolio site.
 
@@ -37,7 +37,7 @@ Please click [here](https://mattie.io/) to view the portfolio site.
 * Use of Variables for better theming changes 
 
 ## 3. Setup and Configuration
-The site uses a basic design so that users can produce a portfolio site using the same template with minimal knowledge of HTML, CSS and Javascript. 
+The site uses a basic design so that users can produce a portfolio site using the same template with minimal knowledge of HTML, CSS and JavaScript. 
 
 ### 3.1. HTML 
 The HTML contains all the content required for the site and with simple changes to text, images and hyperlinks a new user can use this template for a portfolio site.
@@ -58,7 +58,7 @@ to
 ```HTML
 <img class="intro_image" src="/LOCATION/OF/MY/NEW/IMAGE" alt="a NEW PICTURE">
 ```
-HyperLinks:
+Hyperlinks:
 ```HTML
 <a href="https://github.com/M29992/M29992.github.io" class="btn">View project</a>
 ```
@@ -68,7 +68,7 @@ to
 ``` 
 
 ### 3.2. CSS 
-The CSS can be fully adjusted and changed to create a completely different view and feel, however the site has been designed to allow users to quickly an easily change the theme by adjusting the following section within the style.CSS file : 
+The CSS can be fully adjusted and changed to create a completely different view and feel, however the site has been designed to allow users to quickly and easily change the theme by adjusting the following section within the style.CSS file : 
 ```CSS
     /* Variables for custom properties */
      :root {
@@ -101,9 +101,9 @@ The CSS can be fully adjusted and changed to create a completely different view 
             --font-social-size: 2.5rem;
         }
 ```
-changing these setings allow Font, colours and sizes to be adjusted. 
+changing these settings allow Font, colours and sizes to be adjusted. 
 
-The cover background contains a linear gradient and url that can be changed to adjust the secondary gradient colour and to change or remove the underlying background image.
+The cover background contains a linear gradient and URL that can be changed to adjust the secondary gradient colour and to change or remove the underlying background image.
 ```CSS
     /*cover background */
     
@@ -118,7 +118,7 @@ The cover background contains a linear gradient and url that can be changed to a
     @media(min-width:600px) {
         .background {
             background-color: var(--primary-color);
-            background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgorunds/background.jpg);
+            background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgrounds/background.jpg);
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -126,18 +126,18 @@ The cover background contains a linear gradient and url that can be changed to a
     }
  ```
  
-### 3.3. Javascript 
-Javascript has been used spariginly within the site design to limit compatibility issues and provide the smoothest operation. 
+### 3.3. JavaScript 
+JavaScript has been used sparingly within the site design to limit compatibility issues and provide the smoothest operation. 
 
 the hamburger.Js file is used to provide the behaviour for the navigation menu and should not need to be adjusted, it has 2 functions 
 one to view the hidden navigation menu 
-```Javascript
+```JavaScript
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
 });
 ```
 the other is used to hide the navigation menu once a link is selected from within the menu.
-```Javascript
+```JavaScript
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         document.body.classList.remove('nav-open');
@@ -145,7 +145,7 @@ navLinks.forEach(link => {
 })
 ```
 
-There are additional scripts within the HTML document to gather the current year, use font awsome, and to get google analystics. 
+There are additional scripts within the HTML document to gather the current year, use font awesome, and to get google analytics. 
     
 ## 4. Customization and Editing 
 ### 4.1. Header Section
@@ -158,11 +158,11 @@ background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 
 ```
 Desktop view displays a background image under the CSS gradient that covers the full header section.
 ```CSS
-background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgorunds/background.jpg);
+background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgrounds/background.jpg);
 ```
 #### 4.1.2. Introduction
 The Introduction section consists of a title, an image and a subtitle.
-The section title is centered and keeps a 1em padding at the bottom to give the title a level of importance and seperate the title from the image.
+The section title is centered and keeps a 1em padding at the bottom to give the title a level of importance and separate the title from the image.
 ```CSS
 .intro .section_title {
    position: relative;
@@ -210,7 +210,7 @@ The HTML is used to create hyperlinks for the menu system.
     </ul>
 </nav>
 ```
-The Javascript is used to hide and show the menu system from the users.
+The JavaScript is used to hide and show the menu system from the users.
 ```JavaScript
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav_item')
@@ -304,8 +304,8 @@ The CSS is used to style how the hamburger and menu appears to the user.
 ```
   
 ### 4.2. Skills Section
-The skills section uses a skill listcalled ```skills_list ``` and ```aSkill``` to show of users skills.
-```skills_list ``` uses a CSS flexbox to dynamicaly add new ```aSkills``` to the right untill it hits the edge of the browser creating a new line for the next item. CSS styling to aligning items to the centre has been added to generate from the center out. 
+The skills section uses a skill list called ```skills_list ``` and ```aSkill``` to show of user’s skills.
+```skills_list ``` uses a CSS flexbox to dynamically add new ```aSkills``` to the right until it hits the edge of the browser creating a new line for the next item. CSS styling to aligning items to the centre has been added to generate from the center out. 
 
 ```aSkill``` is used as a data item within ```skills_list ``` to represent a skill each ```aSkill``` object contains an image to represent the skill, a data hint to help with keyword search and scanning tools and an alt for accessibility.
 ```HTML
@@ -356,10 +356,10 @@ Every job is held in a ```job``` object that contains the title, date, location 
         }
     }
 ```
-Each job has a padding of 2em from the previous job or section title. When viewing from a Desktop or display greater then 600 pixels the jobs are displayed using CSS grids to make use of the full width available. 
+Each job has a padding of 2em from the previous job or section title. When viewing from a Desktop or display greater than 600 pixels the jobs are displayed using CSS grids to make use of the full width available. 
 
 ### 4.5. Education Section
-Education works similarly to the education section, every certification or achievement is held in the ```education_list``` under a ```school``` object. 
+Education works similarly to the education section; every certification or achievement is held in the ```education_list``` under a ```school``` object. 
 
 A school object contains a level, date, location and specs.
 ```CSS
@@ -393,13 +393,13 @@ A school object contains a level, date, location and specs.
         }
     }
 ```
-When viewing on a desktop or a device where its pixel width is greater then 600 pixels the content will be displayed within a grid layout using CSS grids to make use of the full width available.
+When viewing on a desktop or a device where its pixel width is greater than 600 pixels the content will be displayed within a grid layout using CSS grids to make use of the full width available.
   
 ### 4.6. Footer Section
 The footer contains the social bar, the copywrite and a horizontal line.
 
-Both the desktop view and mobile view use the same footer CSS. The copywrite is basic text that uses a simple javascript function to get the current year and display this on the site.
-```Javascript
+Both the desktop view and mobile view use the same footer CSS. The copywrite is basic text that uses a simple JavaScript function to get the current year and display this on the site.
+```JavaScript
 <script>
    document.write(new Date().getFullYear());
 </script>
@@ -409,7 +409,7 @@ The horizontal line is used to break up the social media links from the copywrit
 
 #### 4.6.1. Social Bar
 The social bar works similarly to all basic navigation CSS designs, each social media link is held in a div called ```social-list_item``` that is contained within the div social list.
-All links within the footer first remove the styling, aligns the list to the centre and places the list in a CSS flexbox. Each social media link contains a link an aria-label for accessibility and a class that is ```fab fa-***``` where fab fa uses font awsome CSS (https://fontawesome.com/) to produce social media icons rather then using images or text.
+All links within the footer first remove the styling, aligns the list to the centre and places the list in a CSS flexbox. Each social media link contains a link an aria-label for accessibility and a class that is ```fab fa-***``` where fab fa uses font awesome CSS (https://fontawesome.com/) to produce social media icons rather than using images or text.
 
 ```CSS
  .footer a {
@@ -445,7 +445,7 @@ All links within the footer first remove the styling, aligns the list to the cen
 * ```HTML``` adjusted to meet validation 
 * ```CSS``` adjusted to meet validation
 ### 1.0.1
-* Additonal comments created within ```CSS```, ```HTML```, ```JavaScript```
+* Additional comments created within ```CSS```, ```HTML```, ```JavaScript```
 ### 1.0.0
 * Release and linked on social media 
 ### 0.1.1
