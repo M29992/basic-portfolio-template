@@ -36,20 +36,29 @@ The site uses a basic design so that users can produce a portfolio site using th
 ### 3.1 HTML 
 The HTML contains all the content required for the site and with simple changes to text, images and hyperlinks such as changing:
 for TEXT:
+```HTML
             <h1 class="section_title"> <strong>Matthew Evans</strong> </h1>
             to 
             <h1 class="section_title"> <strong>NEW USER NAME</strong> </h1>
-            
+```
 for Images:
-
+```HTML 
+<img class="intro_image" src="https://secure.gravatar.com/avatar/d2cb1f7a860ed5505645c815cd294baf?s=2000" alt="a picture of Matthew Evans">
+to 
+<img class="intro_image" src="/LOCATION/OF/MY/NEW/IMAGE" alt="a NEW PICTURE">
+```
 for HyperLinks:
-
+```HTML
+<a href="https://github.com/M29992/M29992.github.io" class="btn">View project</a>
+to
+<a href="https://github.com/NEWUSER/NEWPROJECT" class="btn">View project</a>
+```
 the site can display the selected users content. 
 
 ### 3.2 CSS 
 The CSS can be fully adjusted and changed to create a completely different view and feel however the site has been designed to allow users to quickly an easily change the theme by adjusting the following section within the style.CSS file : 
+```CSS
     /* Variables for custom properties */
-    
      :root {
         --font-primary: 'Raleway', sans-serif;
         --font-secondary: 'roboto';
@@ -79,8 +88,10 @@ The CSS can be fully adjusted and changed to create a completely different view 
             --font-size-body: 1.125rem;
             --font-social-size: 2.5rem;
         }
+```
 changing these setings allow Font, colours and sizes to be adjusted. 
 The cover background contains a linear gradient and url that can be changed to adjust the secondary gradient colour and to change or remove the underlying background image.
+```CSS
     /*cover background */
     
     .background {
@@ -100,7 +111,7 @@ The cover background contains a linear gradient and url that can be changed to a
             background-position: center;
         }
     }
- 
+ ```
 ### 3.3 Javascript 
 Javascript has been used spariginly within the site design to limit compatibility issues and provide the smoothest operation. 
 
