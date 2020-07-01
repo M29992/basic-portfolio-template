@@ -7,14 +7,20 @@ Please click [here](https://mattie.io/) to view the portfolio site.
 ## 1. Contents 
 * [Features](#2-features)
 * [Setup and Configuration](#3-setup-and-configuration)
+  * [HTML](#31-html)
+  * [CSS](#32-css)
+  * [JavaScript](#33-javascript)
 * [Customization and Editing](#4-customization-and-editing)
   * [Header Section](#41-header-section)
-  * [Portfolio Section](#42-portfolio-section)
-  * [Skills Section](#43-skills-section)
-  * [Work Section](#44-work-section)
+     * [Background](411-background)
+     * [Introduction](412-introduction)
+     * [Navigation](413-navigation)
+  * [Skills Section](#42-skills-section)
+  * [Portfolio Section](#43-portfolio-section)
+  * [Experience Section](#44-experience-section)
   * [Education Section](#45-education-section)
   * [Footer Section](#46-footer-section)
-  * [Social Bar](#461-social-bar)
+    * [Social Bar](#461-social-bar)
 * [Changelog](#5-changelog)
 * [Licence](#6-licence)
 
@@ -33,7 +39,7 @@ Please click [here](https://mattie.io/) to view the portfolio site.
 ## 3. Setup and Configuration
 The site uses a basic design so that users can produce a portfolio site using the same template with minimal knowledge of HTML, CSS and Javascript. 
 
-### 3.1 HTML 
+### 3.1. HTML 
 The HTML contains all the content required for the site and with simple changes to text, images and hyperlinks a new user can use this template for a portfolio site.
 Example of changes to be made:
 Text:
@@ -61,7 +67,7 @@ to
 <a href="https://github.com/NEWUSER/NEWPROJECT" class="btn">View project</a>
 ``` 
 
-### 3.2 CSS 
+### 3.2. CSS 
 The CSS can be fully adjusted and changed to create a completely different view and feel, however the site has been designed to allow users to quickly an easily change the theme by adjusting the following section within the style.CSS file : 
 ```CSS
     /* Variables for custom properties */
@@ -120,7 +126,7 @@ The cover background contains a linear gradient and url that can be changed to a
     }
  ```
  
-### 3.3 Javascript 
+### 3.3. Javascript 
 Javascript has been used spariginly within the site design to limit compatibility issues and provide the smoothest operation. 
 
 the hamburger.Js file is used to provide the behaviour for the navigation menu and should not need to be adjusted, it has 2 functions 
@@ -142,9 +148,9 @@ navLinks.forEach(link => {
 There are additional scripts within the HTML document to gather the current year, use font awsome, and to get google analystics. 
     
 ## 4. Customization and Editing 
-### 4.1 Header Section
+### 4.1. Header Section
 The header section can be broken down to the following subsections: background, navigation and introduction.
-#### 4.1.1 Background
+#### 4.1.1. Background
 The background section contains the headers initial background. 
 Mobile view displays a CSS gradient from the primary colour to the skills section colour.
 ```CSS
@@ -154,7 +160,7 @@ Desktop view displays a background image under the CSS gradient that covers the 
 ```CSS
 background-image: linear-gradient(to bottom, var(--primary-color), rgba(32, 50, 73, 0.825)), url(../Images/Backgorunds/background.jpg);
 ```
-#### 4.1.2 Introduction
+#### 4.1.2. Introduction
 The Introduction section consists of a title, an image and a subtitle.
 The section title is centered and keeps a 1em padding at the bottom to give the title a level of importance and seperate the title from the image.
 ```CSS
@@ -191,9 +197,9 @@ The image when viewed on a desktop is displayed with a shadow and a maximum of 2
 } 
 ```
 
-#### 4.1.3 Navigation 
+#### 4.1.3. Navigation 
   
-### 4.2 Skills Section
+### 4.2. Skills Section
 The skills section uses a skill listcalled ```skills_list ``` and ```aSkill``` to show of users skills.
 ```skills_list ``` uses a CSS flexbox to dynamicaly add new ```aSkills``` to the right untill it hits the edge of the browser creating a new line for the next item. CSS styling to aligning items to the centre has been added to generate from the center out. 
 
@@ -205,7 +211,7 @@ The skills section uses a skill listcalled ```skills_list ``` and ```aSkill``` t
 <!--close skill-->
 ```
 
-### 4.3 Portfolio Section
+### 4.3. Portfolio Section
 Portfolio section displays a list of projects being worked on with a button to redirect to the project or code. 
 projects are displayed as simple content held within a ```aProject``` div tag for desktop viewers ```aProjects``` are displayed as a grid given 400px per column in the grid. 
 ```HTML
@@ -218,7 +224,7 @@ projects are displayed as simple content held within a ```aProject``` div tag fo
  <!--close a Project-->
 ```
    
-### 4.4 Experience Section
+### 4.4. Experience Section
 Every job is held in a ```job``` object that contains the title, date, location and specs, these ```job``` objects are then contained within a ```experince_list```.
 ```CSS
 .job {
@@ -248,7 +254,7 @@ Every job is held in a ```job``` object that contains the title, date, location 
 ```
 Each job has a padding of 2em from the previous job or section title. When viewing from a Desktop or display greater then 600 pixels the jobs are displayed using CSS grids to make use of the full width available. 
 
-### 4.5 Education Section
+### 4.5. Education Section
 Education works similarly to the education section, every certification or achievement is held in the ```education_list``` under a ```school``` object. 
 
 A school object contains a level, date, location and specs.
@@ -285,7 +291,7 @@ A school object contains a level, date, location and specs.
 ```
 When viewing on a desktop or a device where its pixel width is greater then 600 pixels the content will be displayed within a grid layout using CSS grids to make use of the full width available.
   
-### 4.6 Footer Section
+### 4.6. Footer Section
 The footer contains the social bar, the copywrite and a horizontal line.
 
 Both the desktop view and mobile view use the same footer CSS. The copywrite is basic text that uses a simple javascript function to get the current year and display this on the site.
