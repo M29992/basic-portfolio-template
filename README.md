@@ -256,6 +256,7 @@ A school object contains a level, date, location and specs.
 .school {
         padding-top: 2em;
     }
+    
  @media(min-width: 600px) {
         .location {
             text-align: right;
@@ -282,6 +283,7 @@ A school object contains a level, date, location and specs.
         }
     }
 ```
+When viewing on a desktop or a device where its pixel width is greater then 600 pixels the content will be displayed within a grid layout using CSS grids to make use of the full width available.
   
 ### 4.6 Footer Section
 The footer contains the social bar, the copywrite and a horizontal line.
