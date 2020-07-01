@@ -34,29 +34,35 @@ Please click [here](https://mattie.io/) to view the portfolio site.
 The site uses a basic design so that users can produce a portfolio site using the same template with minimal knowledge of HTML, CSS and Javascript. 
 
 ### 3.1 HTML 
-The HTML contains all the content required for the site and with simple changes to text, images and hyperlinks such as changing:
-for TEXT:
+The HTML contains all the content required for the site and with simple changes to text, images and hyperlinks a new user can use this template for a portfolio site.
+Example of changes to be made:
+Text:
 ```HTML
             <h1 class="section_title"> <strong>Matthew Evans</strong> </h1>
-            to 
+```
+to
+```HTML
             <h1 class="section_title"> <strong>NEW USER NAME</strong> </h1>
 ```
-for Images:
+Images:
 ```HTML 
 <img class="intro_image" src="https://secure.gravatar.com/avatar/d2cb1f7a860ed5505645c815cd294baf?s=2000" alt="a picture of Matthew Evans">
+```
 to 
+```HTML
 <img class="intro_image" src="/LOCATION/OF/MY/NEW/IMAGE" alt="a NEW PICTURE">
 ```
-for HyperLinks:
+HyperLinks:
 ```HTML
 <a href="https://github.com/M29992/M29992.github.io" class="btn">View project</a>
-to
-<a href="https://github.com/NEWUSER/NEWPROJECT" class="btn">View project</a>
 ```
-the site can display the selected users content. 
+to
+```HTML
+<a href="https://github.com/NEWUSER/NEWPROJECT" class="btn">View project</a>
+``` 
 
 ### 3.2 CSS 
-The CSS can be fully adjusted and changed to create a completely different view and feel however the site has been designed to allow users to quickly an easily change the theme by adjusting the following section within the style.CSS file : 
+The CSS can be fully adjusted and changed to create a completely different view and feel, however the site has been designed to allow users to quickly an easily change the theme by adjusting the following section within the style.CSS file : 
 ```CSS
     /* Variables for custom properties */
      :root {
@@ -90,6 +96,7 @@ The CSS can be fully adjusted and changed to create a completely different view 
         }
 ```
 changing these setings allow Font, colours and sizes to be adjusted. 
+
 The cover background contains a linear gradient and url that can be changed to adjust the secondary gradient colour and to change or remove the underlying background image.
 ```CSS
     /*cover background */
@@ -112,12 +119,27 @@ The cover background contains a linear gradient and url that can be changed to a
         }
     }
  ```
+ 
 ### 3.3 Javascript 
 Javascript has been used spariginly within the site design to limit compatibility issues and provide the smoothest operation. 
 
-the hamburger.Js file is used to provide the behaviour for the navigation menu and should not need to be adjusted, it has 2 functions one to view the hidden navigation menu and the other to hide the navigation menu once a link is selected from within the menu.
+the hamburger.Js file is used to provide the behaviour for the navigation menu and should not need to be adjusted, it has 2 functions 
+one to view the hidden navigation menu 
+```Javascript
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+```
+the other is used to hide the navigation menu once a link is selected from within the menu.
+```Javascript
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
+```
 
-in the HTML docuemnt we have scripts to gather the current year, use fontawsome, and to get google analystics. 
+There are additional scripts within the HTML document to gather the current year, use font awsome, and to get google analystics. 
     
 ## 4. Customization and Editing 
 ### 4.1 Header Section
@@ -150,13 +172,14 @@ the portfolio section displays a list of projects being worked on with a button 
   
 ### 4.6 Footer Section
 The footer contains the social bar, the copywrite and a horizontal line.
-the footer works the same for the desktop view as the mobile view. the copywrite is basic text that has been given text padded 2em to the right with 0 margin from the bottom of the page.copywrite uses a simple javascript function to get the current year and display this on the site.
+
+Both the desktop view and mobile view use the same footer CSS. The copywrite is basic text that uses a simple javascript function to get the current year and display this on the site.
 
 The horizontal line is used to break up the social media links from the copywrite information but can be better executed and will be adjusted in future builds to represent this.
 
 #### 4.6.1 Social Bar
-The social bar works similarly to all basic navigation CSS designs each social media link is held in a div called social-list_item that is contained within the div social list.
-all links within the footer first remove the styling aligns the list to the centre and places the list in a CSS flexbox.each social media link contains a link an aria-label for accessibility and a class that is fab fa-*** where fab fa uses font awsome CSS (https://fontawesome.com/) to produce social media icons rather then using images or text.
+The social bar works similarly to all basic navigation CSS designs, each social media link is held in a div called social-list_item that is contained within the div social list.
+All links within the footer first remove the styling, aligns the list to the centre and places the list in a CSS flexbox. Each social media link contains a link an aria-label for accessibility and a class that is fab fa-*** where fab fa uses font awsome CSS (https://fontawesome.com/) to produce social media icons rather then using images or text.
   
 
 ## 5. Changelog
@@ -165,10 +188,10 @@ all links within the footer first remove the styling aligns the list to the cent
 ### 1.0.3
 * Social links and logo links adjusted to meet accessibility needs
 ### 1.0.2
-* HTML adjusted to meet validation 
-* CSS adjusted to meet validation
+* ```HTML``` adjusted to meet validation 
+* ```CSS``` adjusted to meet validation
 ### 1.0.1
-* Additonal comments created within CSS, HTML, JavaScript
+* Additonal comments created within ```CSS```, ```HTML```, ```JavaScript```
 ### 1.0.0
 * Release and linked on social media 
 ### 0.1.1
