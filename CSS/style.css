@@ -279,7 +279,6 @@
     
     @media(min-width: 600px) {
         .intro_image {
-            /*  grid-area: img; */
             max-width: 280px;
             position: relative;
             z-index: 2;
